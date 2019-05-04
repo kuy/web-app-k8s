@@ -1,7 +1,6 @@
 # web-app-k8s
 
-Configuration files for deploying ami-server to GKE.
-This is a temporary repository to deploy to GKE until moving to Spinnaker.
+Kubernetes manifests for [web-app](https://github.com/kuy/web-app).
 
 ## Requirements
 
