@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+spec:
+  selector:
+    matchLabels:
+      run: app
+  template:
+    spec:
+      containers:
+        - name: app
+          env:
+            - name: RACK_ENV
+              value: production

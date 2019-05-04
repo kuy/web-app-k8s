@@ -1,0 +1,11 @@
+namespace: web-app-production
+
+bases:
+  - ../base
+
+resources:
+  - namespace.yaml
+
+patches:
+  - rack-env.yaml
+  - tag.yaml

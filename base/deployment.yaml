@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+  labels:
+    run: app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      run: app
+  template:
+    metadata:
+      labels:
+        run: app
+    spec:
+      containers:
+        - name: app
+          ports:
+            - protocol: TCP
+              containerPort: 5678
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 5678
