@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  namespace: argocd
+  namespace: web-app-production
   generateName: db-migrate-
   annotations:
     argocd.argoproj.io/hook: PreSync
