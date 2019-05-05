@@ -10,4 +10,4 @@ spec:
     spec:
       containers:
         - name: app
-          image: netkuy/web-app:8c39012-36
+          image: netkuy/web-app:af675ba-37
